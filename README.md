@@ -51,10 +51,10 @@ Ma contribution clé : **Architecture modularisée** (5 fonctions principales r�
 
 | Approche | Métrique | Résultat |
 |----------|----------|----------|
-| **KNN (k=1)** | Accuracy moyenne |  |
-| **K-Means** | ARI moyen | À compléter |
-| **Vote Majoritaire** | Accuracy (9 classes) | À compléter |
-| **Vote Majoritaire** | Accuracy (5 classes) | À compléter |
+| **KNN (k=1)** | Accuracy moyenne | 89 |
+| **K-Means** | ARI moyen | 80 |
+| **Vote Majoritaire** | Accuracy (9 classes) | 91 |
+| **Vote Majoritaire** | Accuracy (5 classes) | 100 |
 
 ## 🚀 Fonctionnalités Principales
 
