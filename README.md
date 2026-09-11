@@ -79,6 +79,8 @@ vote_majoritaire_descripteurs(descripteurs, k_optimal=1)        # 9 classes
 vote_majoritaire_descripteurs_5_classes(descripteurs, k_optimal=1)  # 5 classes
 Fusion des prédictions de 5 descripteurs
 Comparaison impact : complexité base complète vs 5 classes
+```
+
 📁 Structure du Projet
 BDshape/
 ├── README.md                 # Ce fichier
