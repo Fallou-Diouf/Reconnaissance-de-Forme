@@ -81,6 +81,7 @@ Fusion des prédictions de 5 descripteurs
 Comparaison impact : complexité base complète vs 5 classes
 ```
 
+```text
 📁 Structure du Projet
 BDshape/
 ├── README.md                 # Ce fichier
@@ -94,6 +95,7 @@ BDshape/
     ├── confusion_matrices/
     ├── precision_recall_curves/
     └── summary.txt
+```
 
 Comment Exécuter
 
