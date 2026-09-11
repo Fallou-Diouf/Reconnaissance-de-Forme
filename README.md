@@ -1,7 +1,6 @@
-📋 Structure du README proposée
 # BDshape - Reconnaissance des Formes par Classification
 
-## 🎯 Contexte du Projet
+## Contexte du Projet
 
 **Projet universitaire** - M1 Master Informatique, année 2025-2026  
 **Objectif** : Évaluer le comportement de 5 méthodes classiques de descripteurs de formes 
@@ -19,7 +18,7 @@ avec 3 approches de classification différentes.
 
 ---
 
-## 🛠️ Mon Rôle dans le Projet
+## Mon Rôle dans le Projet
 
 J'ai implémenté et optimisé **l'intégralité de la pipeline de classification** :
 
@@ -33,11 +32,11 @@ Ma contribution clé : **Architecture modularisée** (5 fonctions principales r�
 
 ---
 
-## 📊 Technologies & Stack Technique
+## Technologies & Stack Technique
 
-- **Langage** : Python 3
-- **Descripteurs de formes** : E34, GFD, SA, F0, F2 (fichiers .MET pré-calculés)
-- **Librairies clés** :
+- **Langage** : Python
+- **Descripteurs de formes** : E34, GFD, SA, F0, F2
+- **Librairies** :
   - `scikit-learn` : KNeighborsClassifier, KMeans, Pipeline, cross_val_predict, StratifiedKFold
   - `numpy` : Manipulations de données (votes majoritaires, indexation)
   - `matplotlib` : Visualisations (confusion matrices, courbes PR, WCSS)
@@ -47,7 +46,7 @@ Ma contribution clé : **Architecture modularisée** (5 fonctions principales r�
 
 ---
 
-## 🎓 Résultats Clés
+## Résultats Clés
 
 | Approche | Métrique | Résultat |
 |----------|----------|----------|
@@ -56,7 +55,7 @@ Ma contribution clé : **Architecture modularisée** (5 fonctions principales r�
 | **Vote Majoritaire** | Accuracy (9 classes) | 91 |
 | **Vote Majoritaire** | Accuracy (5 classes) | 100 |
 
-## 🚀 Fonctionnalités Principales
+## Fonctionnalités Principales
 
 ### 1️⃣ Chargement & Normalisation
 ```python
@@ -93,33 +92,16 @@ BDshape/
     ├── confusion_matrices/
     ├── precision_recall_curves/
     └── summary.txt
-🏃 Comment Exécuter
+
+Comment Exécuter
+
 Installation
 pip install numpy scikit-learn matplotlib
 Exécution complète
-python main.py
+python BDshape_Reconnaissance_des_Formes_par_Classification.py
 Cela lance automatiquement :
 
 Recherche des k optimaux pour KNN et K-Means
 Approche KNN avec validation croisée
 Approche K-Means avec évaluation des clusters
 Vote majoritaire (9 classes + 5 classes)
-Exécution partielle (ex: KNN uniquement)
-from classification import charger_descripteurs, approche_knn
-
-X, y = charger_descripteurs("E34")
-approche_knn(["E34"], k_optimal=1)
-🔍 Points d'Intérêt Technique
-✨ Choix implémentation
-Pipeline scikit-learn : Normalisation automatique avant chaque split CV
-
-✅ Élimine la fuite de données (data leakage)
-✅ Code lisible et maintenable
-StratifiedKFold vs KFold : Maintient la proportion des classes à chaque split
-
-✅ Critique sur petite base (99 images)
-cross_val_predict vs cross_val_score :
-
-cross_val_predict → Prédictions "out-of-fold" pour matrices confusion vraies
-cross_val_score → Scores moyens pour comparaison
-Vote majoritaire :
